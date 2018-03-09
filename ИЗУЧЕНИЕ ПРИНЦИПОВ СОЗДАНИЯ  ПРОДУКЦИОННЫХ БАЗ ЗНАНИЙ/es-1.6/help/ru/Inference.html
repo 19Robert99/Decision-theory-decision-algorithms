@@ -1,0 +1,17 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"><title>Поиск решения</title><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="index.html" title="Справка по Divinus Expert System"><link rel="up" href="index.html" title="Справка по Divinus Expert System"><link rel="prev" href="KnowledgeRepresentation.html" title="Представление знаний"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Поиск решения</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="KnowledgeRepresentation.html">Пред.</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> </td></tr></table><hr></div><div class="section" lang="ru"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="Inference"></a>Поиск решения</h2></div></div></div><p>При поиске решений строится граф состояний. Вершинами графа являются
+    возможные состояния системы, каждое из которых, задается списком значений
+    переменных. Дуги графа представляют собой переход из одного состояния в
+    другое, т.е. получение значения переменной, еще не присутствующей в
+    списке. Дугами являются: применение правила, запрос значения входной
+    переменной у пользователя.</p><div class="section" lang="ru"><div class="titlepage"><div><div><h3 class="title"><a name="id2754762"></a>Поиск в глубину (Depth-First Search)</h3></div></div></div><p>Поиск в глубину осуществляется по следующему алгоритму:</p><div class="orderedlist"><ol type="1"><li><p>Раскрывается начальная вершина.</p></li><li><p>Переходим по первой найденной дуге (которая не была
+          использована) к вершине следующего уровня.</p></li><li><p>Если текущая вершина не раскрыта, то раскрываем.</p></li><li><p>Если у текущей вершины нет выходящих дуг или все они уже были
+          использованы, то переходим к вершине предыдущего уровня. Переходим к
+          пункту 2.</p></li></ol></div><p>Процесс поиска заканчивается в двух случаях: достигнута искомая
+      вершина (т.е. вершина состояние которой характеризуется списком значений
+      переменных, содержащим значение искомой переменной), достигнута исходная
+      вершина и при этом не имеется выходящих дуг, которые не были
+      использованы. В первом случае вывод завершается удачно и находится
+      значение искомой переменной, во втором случае вывод завершается
+      неудачно.</p><div class="figure"><a name="id2754840"></a><p class="title"><b>Рисунок 2. Поиск в глубину</b></p><div class="mediaobject"><img src="images/dfs.png" alt="Поиск в глубину"></div></div><p>На рисунке приведен пример поиска в глубину. Искомая вершина
+      закрашена черным цветом, порядок перехода по дугам обозначен
+      цифрами.</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="KnowledgeRepresentation.html">Пред.</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> </td></tr><tr><td width="40%" align="left" valign="top">Представление знаний </td><td width="20%" align="center"><a accesskey="h" href="index.html">Начало</a></td><td width="40%" align="right" valign="top"> </td></tr></table></div></body></html>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ExpertSystem>
+  <Variables>
+    <Variable ID="0" Kind="Output" Name="Выходная переменная" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="Yes"/>
+        <VariableValue ID="Name" Name="No"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="Kind" Kind="Input" Name="Входная переменная1" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="1"/>
+        <VariableValue ID="Name" Name="2"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="Name" Kind="Intermediate" Name="Variable 3" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="w"/>
+        <VariableValue ID="Name" Name="e"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="Name" Kind="Input" Name="Variable 4" Type="Discrete" Question="">
+      <VariableValues><VariableValue ID="0" Name="jn"/></VariableValues>
+    </Variable>
+  </Variables>
+  <Rules>
+    <Rule ID="0" Name="Правило 1">
+      <LRuleItems><LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/></LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="2" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="0" Name="Правило 2">
+      <LRuleItems><LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/></LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="2" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="0" Name="Rule 3">
+      <LRuleItems><LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/></LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="0" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="0" Name="Rule 4">
+      <LRuleItems><LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/></LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="0" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="0" Name="Rule 5">
+      <LRuleItems><LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/></LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="2" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+  </Rules>
+</ExpertSystem>

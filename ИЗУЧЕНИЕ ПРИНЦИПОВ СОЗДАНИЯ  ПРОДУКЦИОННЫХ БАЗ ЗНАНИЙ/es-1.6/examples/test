@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<ExpertSystem Version="1.5">
+  <Variables>
+    <Variable ID="0" Name="Variable 1" Kind="Input" Type="Number"/>
+    <Variable ID="1" Name="Variable 2" Kind="Input" Type="Number"/>
+    <Variable ID="2" Name="Variable 3" Kind="Output" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="П1 > П2"/>
+        <VariableValue ID="1" Name="П1 &lt; П2"/>
+        <VariableValue ID="2" Name="П1 = П2"/>
+      </VariableValues>
+    </Variable>
+  </Variables>
+  <Rules>
+    <Rule ID="0" Name="Rule 1">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign=">" VarIndex="0" ValueNumber="0" ValueVarIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="2" VarItemIndex="0"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="1" Name="Rule 2">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="&lt;" VarIndex="0" ValueNumber="0" ValueVarIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="2" VarItemIndex="1"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="2" Name="Rule 3">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="0" ValueNumber="0" ValueVarIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="2" VarItemIndex="2"/>
+      </RRuleItems>
+    </Rule>
+  </Rules>
+</ExpertSystem>

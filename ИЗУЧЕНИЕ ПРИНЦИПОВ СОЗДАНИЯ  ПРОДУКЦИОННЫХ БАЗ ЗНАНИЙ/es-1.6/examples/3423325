@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<ExpertSystem WWW="352" EMail="34" Author="234" Version="1.7">
+  <Variables>
+    <Variable ID="0" Kind="Input" Name="Голод" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="Есть"/>
+        <VariableValue ID="Name" Name="Нет"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="Name" Kind="Input" Name="Цены" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="Высокие"/>
+        <VariableValue ID="Name" Name="Низкие"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="Name" Kind="Input" Name="Деньги" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="Мало"/>
+        <VariableValue ID="Name" Name="Много"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="Name" Kind="Input" Name="Вкус" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="Хороший"/>
+        <VariableValue ID="Name" Name="Так себе"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="Kind" Kind="Input" Name="Свободное Место" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="Есть"/>
+        <VariableValue ID="Name" Name="Нет"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="Kind" Kind="Output" Name="Пойти в столовую" Type="Discrete" Question="">
+      <VariableValues>
+        <VariableValue ID="0" Name="Да"/>
+        <VariableValue ID="Name" Name="Нет"/>
+      </VariableValues>
+    </Variable>
+  </Variables>
+  <Rules>
+    <Rule ID="0" Name="Правило1">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="1" Name="2">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="2" Name="3">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="3" Name="4">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="4" Name="5">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="5" Name="6">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="6" Name="7">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="7" Name="8">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="8" Name="9">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="9" Name="10">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="10" Name="11">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="11" Name="12">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="12" Name="13">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="13" Name="14">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="14" Name="15">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="15" Name="16">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="0"/></RRuleItems>
+    </Rule>
+    <Rule ID="16" Name="17">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="17" Name="18">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="18" Name="19">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="19" Name="20">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="20" Name="21">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="21" Name="22">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="22" Name="23">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="23" Name="24">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="0"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="24" Name="25">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="25" Name="26">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="26" Name="27">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="27" Name="28">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="28" Name="29">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="29" Name="30">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="30" Name="31">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="0"/>
+        <LRuleItem ID="Name" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+    <Rule ID="31" Name="32">
+      <LRuleItems>
+        <LRuleItem ID="0" Sign="=" IsNot="FALSE" VarIndex="0" VarItemIndex="1"/>
+        <LRuleItem ID="1" Sign="=" IsNot="FALSE" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="2" Sign="=" IsNot="FALSE" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="3" Sign="=" IsNot="FALSE" VarIndex="3" VarItemIndex="1"/>
+        <LRuleItem ID="4" Sign="=" IsNot="FALSE" VarIndex="4" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems><RRuleItem ID="0" VarIndex="5" VarItemIndex="1"/></RRuleItems>
+    </Rule>
+  </Rules>
+</ExpertSystem>

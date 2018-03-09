@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ExpertSystem Version="1.5">
+  <Variables>
+    <Variable ID="0" Name="Выходная переменная" Kind="Output" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Yes"/>
+        <VariableValue ID="1" Name="No"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="1" Name="Входная переменная" Kind="Input" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="1"/>
+        <VariableValue ID="1" Name="2"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="2" Name="Variable 3" Kind="Input" Type="Discrete">
+      <VariableValues/>
+    </Variable>
+  </Variables>
+  <Rules>
+    <Rule ID="0" Name="Правило 1">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="0"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="1" Name="Правило 2">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="1"/>
+      </RRuleItems>
+    </Rule>
+  </Rules>
+</ExpertSystem>

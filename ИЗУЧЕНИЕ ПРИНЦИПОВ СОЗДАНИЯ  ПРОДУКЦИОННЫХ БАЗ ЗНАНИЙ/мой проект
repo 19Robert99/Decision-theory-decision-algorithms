@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<ExpertSystem Version="1.6" Author="" EMail="" WWW="">
+  <Variables>
+    <Variable ID="0" Name="Поехать на автобусе" Kind="Output" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Да"/>
+        <VariableValue ID="1" Name="Нет"/>
+        <VariableValue ID="2" Name="Ждать"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="1" Name="Деньги" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Нет"/>
+        <VariableValue ID="1" Name="Есть"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="2" Name="Время" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Есть"/>
+        <VariableValue ID="1" Name="Мало"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="3" Name="Комфорт" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Удобно"/>
+        <VariableValue ID="1" Name="Средне"/>
+        <VariableValue ID="2" Name="Неудобно"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="4" Name="Багаж" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Малый"/>
+        <VariableValue ID="1" Name="Средний"/>
+        <VariableValue ID="2" Name="Большой"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="5" Name="Сидячие места" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Есть"/>
+        <VariableValue ID="1" Name="Нет"/>
+      </VariableValues>
+    </Variable>
+  </Variables>
+  <Rules>
+    <Rule ID="0" Name="Правило1 Поехать на втобусе ">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="1"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="1" Name="Правило 2">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="0"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="2" Name="Правило 3">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="2" IsNot="FALSE" Sign="=" VarIndex="3" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="0"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="3" Name="Правило 4">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="2" IsNot="FALSE" Sign="=" VarIndex="3" VarItemIndex="2"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="1"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="4" Name="Правило 5">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="1"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="2" IsNot="FALSE" Sign="=" VarIndex="3" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="2"/>
+      </RRuleItems>
+    </Rule>
+  </Rules>
+</ExpertSystem>

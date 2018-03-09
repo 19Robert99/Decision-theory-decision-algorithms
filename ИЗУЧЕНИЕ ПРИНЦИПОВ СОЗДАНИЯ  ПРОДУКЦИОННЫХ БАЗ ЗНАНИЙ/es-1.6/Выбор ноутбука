@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<ExpertSystem Version="1.6" Author="" EMail="" WWW="">
+  <Variables>
+    <Variable ID="0" Name="Купить ноутбук" Kind="Output" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Да"/>
+        <VariableValue ID="1" Name="Нет"/>
+        <VariableValue ID="2" Name="Копить"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="1" Name="Деньги" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Есть"/>
+        <VariableValue ID="1" Name="Нет"/>
+        <VariableValue ID="2" Name="Мало"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="2" Name="Видеокарта" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="Дискретная"/>
+        <VariableValue ID="1" Name="Интегрированная"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="3" Name="Процессор" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="AMD"/>
+        <VariableValue ID="1" Name="Intel"/>
+      </VariableValues>
+    </Variable>
+    <Variable ID="4" Name="Цена" Kind="Input" Question="" Type="Discrete">
+      <VariableValues>
+        <VariableValue ID="0" Name="до 10 000"/>
+        <VariableValue ID="1" Name="больше 10 000"/>
+      </VariableValues>
+    </Variable>
+  </Variables>
+  <Rules>
+    <Rule ID="0" Name="Есть деньги">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="0"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="1" Name="Нету денег">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="1"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="2" Name="Дискретная">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="0"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="3" Name="Интегрированная ">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="1"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="4" Name="Дискретная 2">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="2"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="2"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="5" Name="Интел">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="0"/>
+        <LRuleItem ID="2" IsNot="FALSE" Sign="=" VarIndex="3" VarItemIndex="1"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="0"/>
+      </RRuleItems>
+    </Rule>
+    <Rule ID="6" Name="ADM">
+      <LRuleItems>
+        <LRuleItem ID="0" IsNot="FALSE" Sign="=" VarIndex="1" VarItemIndex="0"/>
+        <LRuleItem ID="1" IsNot="FALSE" Sign="=" VarIndex="2" VarItemIndex="1"/>
+        <LRuleItem ID="2" IsNot="FALSE" Sign="=" VarIndex="3" VarItemIndex="0"/>
+      </LRuleItems>
+      <RRuleItems>
+        <RRuleItem ID="0" VarIndex="0" VarItemIndex="1"/>
+      </RRuleItems>
+    </Rule>
+  </Rules>
+</ExpertSystem>
